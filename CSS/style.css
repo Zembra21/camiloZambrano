@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body {
+    background-color: #193835;
+}
+
+main {
+    position: relative;
+    clear: both;
+    margin: 100px 0px 0px 25%;
+    width: 50%;
+    background-color: #f4ebe1;
+    height: 350px;
+    border-radius: 20px;
+}
+#left {
+    clear: none;
+    float: left;
+    width: 25%;
+    background-color: #f6f2ec;
+    height: 350px;
+    border-radius: 20px 0 0px 20px;
+    border-style: double;
+    border-width: 0px 5px 0 0;
+}
+#arriba{
+    width: 100%;
+    height: 15px;
+    clear: both;
+    float: left;
+}
+#azul{
+    width: 25%;
+    clear: none;
+    float: left;
+    background-color: #85cfcf;
+    height: 15px;
+    border-radius: 20px 0 0 0;
+}
+#verde{
+    width: 25%;
+    clear: none;
+    float: left;
+    background-color: #44c68e;
+    height: 15px;
+}
+#amarillo{
+    width: 25%;
+    clear: none;
+    float: left;
+    background-color: #f3e531;
+    height: 15px;
+}
+#rojo{
+    width: 25%;
+    clear: none;
+    float: left;
+    background-color: #ea323f;
+    height: 15px;
+}
+h1 {
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    color: #193835;
+    font-family: 'Teko', sans-serif;
+    font-size: 38pt;
+    clear: none;
+    float: left;
+    margin: 0px;
+    width: 70%;
+    margin-top: 25px;
+
+}
+#cajaRoja{
+    clear: none;
+    float: left;
+    width: 15%;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-color: #e23a49;
+    margin-top: 80px;
+}
+h2 {
+    clear: none;
+    float: left;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Teko', sans-serif;
+    font-size: 10pt;
+    line-height: 0px;
+    letter-spacing: -5px;
+    color: #e23a49;
+    
+}
+#right{
+    float: left;
+    clear: none;
+}
+
+#ilu{
+    position:absolute;
+    width: 30%;
+    float: left;
+    clear: none;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#mail{position: absolute;
+    float: left;
+    clear: none;
+    width: 5%;
+    margin-left: 42%;
+    margin-top: 100px;
+
+}
+#pho{position: absolute;
+    float: left;
+    clear: none;
+    width: 5%;
+    margin-left: 42%;
+    margin-top: 150px;
+
+}
+#inst{position: absolute;
+    float: left;
+    clear: none;
+    width: 5%;
+    margin-left: 42%;
+    margin-top: 200px;
+
+}
+ul{
+    float: left;
+    clear: none;
+    width: 10%;
+    color: #193835;
+    font-family: sans-serif;
+    list-style-type: none;
+    font-size: 10pt;
+    margin-left: 190%;
+    margin-top: 105px;
+    line-height: 17px;
+}
