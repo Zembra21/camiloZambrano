@@ -142,3 +142,44 @@ ul{
     margin-top: 105px;
     line-height: 17px;
 }
+
+
+
+input{
+    background-color: #85cfcf;
+    border: none;
+    height: 30px;
+    width: 30%;
+    margin-top: 30px;
+}
+
+
+
+#pantalla{
+    margin-left: 15%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+#botones{
+    margin-left: 15%;
+    width: 62%;
+    margin-top: 10px;
+}
+
+
+
+button{
+    width: 48%;
+    margin-left: 1%;
+    margin-top: 5px;
+    float: left;
+    clear: none;
+    height: 100px;
+    border: none;
+    background-color: #e23a49;
+    color: #f4ebe1;
+    font-size: 50px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Calculadora</title>
+</head>
+<body>
+    <main id="mainCal">
+        <div id="pantalla">
+            <input type="number" id="valor1">
+            <input type="number" id="valor2">
+        </div>
+        <div id="botones">
+            <button id="suma" onclick="sumar()">
+                +
+            </button>
+            <button id="resta" onclick="restar()">
+                -
+            </button>
+            <button id="multiplicacion" onclick="multiplicar()">
+                x
+            </button>
+            <button id="divicion" onclick="dividir()">
+                ÷
+            </button>
+        </div>
+    </main>
+
+    <script>
+
+var sumar = function(a,b){
+    var a = document.getElementById('valor1').value
+    var b = document.getElementById('valor2').value
+    var a = parseInt(a)
+    var b = parseInt(b)
+    var c = a+b
+    console.log(c)
+    alert(c)
+    return c
+}
+
+var restar = function(a,b){
+    var a = document.getElementById('valor1').value
+    var b = document.getElementById('valor2').value
+    var a = parseInt(a)
+    var b = parseInt(b)
+    var c = a-b
+    console.log(c)
+    alert(c)
+    return c
+}
+
+var dividir = function(a,b){
+    var a = document.getElementById('valor1').value
+    var b = document.getElementById('valor2').value
+    var a = parseInt(a)
+    var b = parseInt(b)
+    var c = a/b
+    console.log(c)
+    alert(c)
+    return c
+}
+
+var multiplicar = function(a,b){
+    var a = document.getElementById('valor1').value
+    var b = document.getElementById('valor2').value
+    var a = parseInt(a)
+    var b = parseInt(b)
+    var c = a*b
+    console.log(c)
+    alert(c)
+    return c
+}
+
+
+    </script>
+
+</body>
+</html>
