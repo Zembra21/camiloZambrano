@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body style="background-color: #ccecff;">
+    <div contenidoF style="background-color: #00a2ff; width: 80%; margin-left: 10%; margin-top: 50px; border-radius: 10px; position: relative; float: left;">
+
+        <div id="inputs" style="width: 100%; position: relative; float: left; clear: both;">
+<input placeholder="Nombre" type="text" id="nombre" style="width: 20%; position: relative; float: left; clear: none; margin-top: 20px;
+ background-color: aliceblue; border-style: none; border-radius: 15px; height: 20px; text-align: center; margin-left: 5%;">
+<input placeholder="Apellido" type="text" id="apellido" style="width: 20%; position: relative; float: left; clear: none; margin-top: 20px;
+background-color: aliceblue; border-style: none; border-radius: 15px; height: 20px; text-align: center; margin-left: 5%;">
+<input placeholder="Dirección" type="text" id="direccion" style="width: 20%; position: relative; float: left; clear: none; margin-top: 20px;
+background-color: aliceblue; border-style: none; border-radius: 15px; height: 20px; text-align: center; margin-left: 5%;">
+<button onclick="proceso()" id="guardar" style="width: 10%; position: relative; float: left; clear: none; margin-top: 19px;
+background-color: rgb(224, 42, 93); border-style: none; border-radius: 15px; height: 25px; text-align: center; margin-left: 5%; color: aliceblue; font-size: 10pt;"> Guardar </button>
+</div>
+
+
+<div id="elementosF" style="width: 90%; margin-left: 5%; background-color: #32e4fb; position: relative; float: left; clear: both;
+margin-top: 30px; overflow-y: auto; margin-bottom: 30px; border-radius: 10px; padding-bottom: 10px; height: 400px;">
+
+<!-- 
+    <div class="item">
+    <div class="nombreI">Camilo</div>
+    <div class="apellidoI">Zambrano</div>
+    <div class="direccionI">calle</div>
+</div>
+-->
+
+
+
+
+</div>
+
+    </div>
+</body>
+
+<script>
+
+var datos = []
+
+
+
+function proceso() {
+
+var n = document.getElementById("nombre").value
+var a = document.getElementById("apellido").value
+var d = document.getElementById("direccion").value
+
+//console.log(n)
+//console.log(a)
+//console.log(d)
+
+datos.push({nombre:n,apellido:a,direccion:d})
+
+console.log(datos)
+
+cargarDatos()
+
+var cadenaTexto = JSON.stringify(datos)
+
+localStorage.setItem('datos',cadenaTexto)
+
+
+}
+
+function cargarDatos(){
+
+    var elementosF = document.getElementById("elementosF")
+
+    elementosF.innerHTML = ""
+
+for (let i = 0; i < datos.length; i++){
+
+    var creaItem = '<div class="item">' + 
+                    '<div class="nombreI">'+ datos[i].nombre + '</div>' + 
+                    '<div class="apellidoI">'+ datos[i].apellido + '</div>' +
+                    '<div class="direccionI">'+ datos[i].direccion + '</div>' + 
+                    '</div>'
+elementosF.innerHTML += creaItem
+
+}
+
+}
+
+function cargarStorage(){
+    var misDatos = JSON.parse(localStorage.getItem('datos'))
+    if(misDatos == null){
+        datos = []
+    }
+    else{
+
+    datos = misDatos
+    cargarDatos()
+    }
+}
+
+cargarStorage()
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>

@@ -183,3 +183,53 @@ button{
     color: #f4ebe1;
     font-size: 50px;
 }
+
+
+.nombreI{
+    width: 25%;
+    padding-left: 2.5%;
+    position: relative;
+    float: left;
+    clear: none;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: #e0f3ffcc;
+    height: 20px;
+    line-height: 22px;
+    border-radius: 10px;
+
+    color: #050040;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.apellidoI{
+    width: 25%;
+    padding-left: 2.5%;
+    position: relative;
+    float: left;
+    clear: none;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    background-color: #e0f3ffcc;
+    height: 20px;
+    line-height: 22px;
+    border-radius: 10px;
+    color: #050040;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.direccionI{
+    width: 25%;
+    padding-left: 2.5%;
+    position: relative;
+    float: left;
+    clear: none;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    background-color: #e0f3ffcc;
+    height: 20px;
+    line-height: 22px;
+    border-radius: 10px;
+    color: #050040;
+    font-family: Arial, Helvetica, sans-serif;
+}
